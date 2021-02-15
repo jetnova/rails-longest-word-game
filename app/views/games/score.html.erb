@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Result</h1>
+  <p><%= @message %></p>
+  <hr>
+  <% if @score %>
+    <p>Score - <%= @score.round(2) %></p>
+  <% end %>
+  <hr>
+  <%= link_to 'Play Again', new_path %>
+</div>
